@@ -1,0 +1,41 @@
+/* Global Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #2d3748;
+}
+
+/* Custom Navbar Styles */
+custom-navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Gallery Image Hover Effect */
+.gallery-image {
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+/* Hero Section Adjustments */
+#vanta-bg {
+    background: linear-gradient(135deg, #1a365d 0%, #2a4365 100%);
+}
+
+/* Section Padding */
+section {
+    padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 60px 0;
+    }
+}
