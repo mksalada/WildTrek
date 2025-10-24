@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WildTrek Youth Adventures</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans">
+    <custom-navbar></custom-navbar>
+    
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div id="vanta-bg" class="absolute inset-0"></div>
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">WildTrek Youth Adventures</h1>
+            <p class="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto">Discover the wilderness, build friendships, and create lifelong memories</p>
+            <div class="flex gap-4 justify-center">
+                <a href="#events" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-medium transition duration-300">Upcoming Events</a>
+                <a href="/register.html" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-medium transition duration-300">Join Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Upcoming Adventures</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Event 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-105">
+                    <img src="http://static.photos/nature/640x360/1" alt="Mountain Trek" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Mountain Trek</h3>
+                        <p class="text-gray-600 mb-4">June 15-17, 2024</p>
+                        <p class="text-gray-700 mb-4">3-day hiking adventure through scenic mountain trails</p>
+                        <a href="#" class="text-green-600 font-medium inline-flex items-center">Learn more <i data-feather="arrow-right" class="ml-2"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Event 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-105">
+                    <img src="http://static.photos/outdoor/640x360/2" alt="Lake Camping" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Lake Camping</h3>
+                        <p class="text-gray-600 mb-4">July 5-7, 2024</p>
+                        <p class="text-gray-700 mb-4">Weekend of kayaking, fishing, and lakeside campfires</p>
+                        <a href="#" class="text-green-600 font-medium inline-flex items-center">Learn more <i data-feather="arrow-right" class="ml-2"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Event 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-105">
+                    <img src="http://static.photos/travel/640x360/3" alt="Survival Skills" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Survival Skills</h3>
+                        <p class="text-gray-600 mb-4">August 12-14, 2024</p>
+                        <p class="text-gray-700 mb-4">Learn essential wilderness survival techniques</p>
+                        <a href="#" class="text-green-600 font-medium inline-flex items-center">Learn more <i data-feather="arrow-right" class="ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="http://static.photos/people/640x360/4" alt="Our Team" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6">Our Story</h2>
+                    <p class="text-gray-700 mb-4">Founded in 2010, WildTrek Youth Adventures began with a simple mission: to connect young people with nature through exciting outdoor experiences.</p>
+                    <p class="text-gray-700 mb-6">What started as a small group of outdoor enthusiasts has grown into a thriving community of adventurers. We've guided over 5,000 young people on unforgettable journeys into the wilderness.</p>
+                    <a href="/about.html" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-medium inline-block transition duration-300">Learn More About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Campsites</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="http://static.photos/nature/320x240/5" alt="Campsite 1" class="rounded-lg shadow hover:shadow-lg transition">
+                <img src="http://static.photos/outdoor/320x240/6" alt="Campsite 2" class="rounded-lg shadow hover:shadow-lg transition">
+                <img src="http://static.photos/travel/320x240/7" alt="Campsite 3" class="rounded-lg shadow hover:shadow-lg transition">
+                <img src="http://static.photos/adventure/320x240/8" alt="Campsite 4" class="rounded-lg shadow hover:shadow-lg transition">
+                <img src="http://static.photos/camping/320x240/9" alt="Campsite 5" class="rounded-lg shadow hover:shadow-lg transition">
+                <img src="http://static.photos/nature/320x240/10" alt="Campsite 6" class="rounded-lg shadow hover:shadow-lg transition">
+                <img src="http://static.photos/outdoor/320x240/11" alt="Campsite 7" class="rounded-lg shadow hover:shadow-lg transition">
+                <img src="http://static.photos/travel/320x240/12" alt="Campsite 8" class="rounded-lg shadow hover:shadow-lg transition">
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-green-600 to-green-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready for Adventure?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Join our next expedition and experience the thrill of the wilderness with expert guides and a supportive community.</p>
+            <a href="/register.html" class="bg-white text-green-700 hover:bg-gray-100 px-8 py-4 rounded-full font-bold text-lg inline-block transition duration-300">Register Now</a>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+    
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+        VANTA.FOG({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            highlightColor: 0x3a7bd5,
+            midtoneColor: 0x43cea2,
+            lowlightColor: 0x185a9d,
+            baseColor: 0x1a202c,
+            blurFactor: 0.50
+        });
+    </script>
+</body>
+</html>
