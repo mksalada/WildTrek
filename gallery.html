@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | WildTrek</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans">
+    <custom-navbar></custom-navbar>
+    
+    <!-- Hero Section -->
+    <section class="relative py-32 bg-gradient-to-r from-green-600 to-green-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Gallery</h1>
+            <p class="text-xl md:text-2xl max-w-2xl mx-auto">See our adventurers in action</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="py-8 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center gap-2">
+                <button class="filter-btn active bg-green-600 text-white px-4 py-2 rounded-full" data-filter="all">All</button>
+                <button class="filter-btn bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-full" data-filter="campsites">Campsites</button>
+                <button class="filter-btn bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-full" data-filter="hiking">Hiking</button>
+                <button class="filter-btn bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-full" data-filter="water">Water Activities</button>
+                <button class="filter-btn bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-full" data-filter="team">Team Building</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Image 1 -->
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition campsites">
+                    <img src="http://static.photos/camping/640x360/1" alt="Campsite at sunset" class="w-full h-64 object-cover gallery-image cursor-pointer">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Sunset Campsite</h3>
+                        <p class="text-gray-600">Summer Expedition 2023</p>
+                    </div>
+                </div>
+                
+                <!-- Image 2 -->
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition hiking">
+                    <img src="http://static.photos/nature/640x360/2" alt="Group hiking" class="w-full h-64 object-cover gallery-image cursor-pointer">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Mountain Ascent</h3>
+                        <p class="text-gray-600">Rocky Mountain Adventure</p>
+                    </div>
+                </div>
+                
+                <!-- Image 3 -->
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition water">
+                    <img src="http://static.photos/outdoor/640x360/3" alt="Kayaking" class="w-full h-64 object-cover gallery-image cursor-pointer">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Lake Kayaking</h3>
+                        <p class="text-gray-600">Water Skills Weekend</p>
+                    </div>
+                </div>
+                
+                <!-- Image 4 -->
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition team">
+                    <img src="http://static.photos/people/640x360/4" alt="Team building" class="w-full h-64 object-cover gallery-image cursor-pointer">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Trust Exercise</h3>
+                        <p class="text-gray-600">Leadership Retreat</p>
+                    </div>
+                </div>
+                
+                <!-- Image 5 -->
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition campsites">
+                    <img src="http://static.photos/camping/640x360/5" alt="Tent setup" class="w-full h-64 object-cover gallery-image cursor-pointer">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Base Camp</h3>
+                        <p class="text-gray-600">Fall Expedition 2023</p>
+                    </div>
+                </div>
+                
+                <!-- Image 6 -->
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition hiking">
+                    <img src="http://static.photos/nature/640x360/6" alt="Summit view" class="w-full h-64 object-cover gallery-image cursor-pointer">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Summit View</h3>
+                        <p class="text-gray-600">High Peaks Challenge</p>
+                    </div>
+                </div>
+                
+                <!-- Image 7 -->
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition water">
+                    <img src="http://static.photos/outdoor/640x360/7" alt="Swimming" class="w-full h-64 object-cover gallery-image cursor-pointer">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Lake Swim</h3>
+                        <p class="text-gray-600">Summer Splash Day</p>
+                    </div>
+                </div>
+                
+                <!-- Image 8 -->
+                <div class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition team">
+                    <img src="http://static.photos/people/640x360/8" alt="Group discussion" class="w-full h-64 object-cover gallery-image cursor-pointer">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Campfire Talk</h3>
+                        <p class="text-gray-600">Leadership Development</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-medium inline-block transition duration-300">
+                    Load More Adventures
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Adventurer Stories</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/80x80/1" alt="Alex" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Alex M.</h4>
+                            <p class="text-gray-600 text-sm">Mountain Trek Participant</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"The mountain trek pushed me further than I thought possible. The guides were amazing at encouraging us while keeping safety the top priority. I came home with new friends and a new confidence in myself."</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/80x80/2" alt="Priya" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Priya K.</h4>
+                            <p class="text-gray-600 text-sm">Survival Skills Graduate</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"I never thought I could start a fire without matches or find edible plants, but the survival skills trip taught me so much! The instructors made learning these skills fun and accessible for everyone."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+    
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+        
+        // Gallery filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button
+                filterBtns.forEach(b => b.classList.remove('active', 'bg-green-600', 'text-white'));
+                filterBtns.forEach(b => b.classList.add('bg-gray-200', 'hover:bg-gray-300'));
+                btn.classList.add('active', 'bg-green-600', 'text-white');
+                btn.classList.remove('bg-gray-200', 'hover:bg-gray-300');
+                
+                // Filter items
+                const filter = btn.dataset.filter;
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.classList.contains(filter)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
